@@ -1,0 +1,324 @@
+:root {
+    --main-font: "Outfit", sans-serif;
+}
+
+
+* {
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+nav {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    height: 50px;
+    background: linear-gradient(to bottom, #03112f 0%, #051d4e 100%);
+}
+
+
+.list-agency {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    transform: skewX(-35deg);
+    transition-duration: .2s;
+    border: 2px solid #0181dd;
+    border-radius: 3px;
+}
+
+.list-agency:hover {
+    background-color: #0181dd;
+}
+
+.find-agency {
+    width: 100%;
+    height: auto;
+    background-color: #37d17d;
+    transform: skewX(-35deg);
+    transition-duration: .2s;
+    border-radius: 3px;
+}
+
+
+
+.page-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #03112f 0%, #051d4e 0%);
+    overflow-x: hidden;
+
+}
+
+.hero-text {
+    width: 100%;
+    background: linear-gradient(to bottom, #051d4e 100%, #03112f 0%);
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: var(--main-font);
+}
+
+.title {
+    font-size: 45.078px;
+    font-weight: 500;
+}
+
+.share-req {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.software-dev-btn {
+    width: 250px;
+    background-color: #303a5c !important;
+}
+
+.app-dev-btn {
+    width: 250px;
+    background-color: #303a5c !important;
+}
+
+.iphone-dev-btn {
+    width: 250px;
+    background-color: #303a5c !important;
+}
+
+.web-dev-btn {
+    width: 250px;
+    background-color: #303a5c !important;
+}
+
+.enterprise-dev-btn {
+    width: 350px;
+    background-color: #303a5c !important;
+}
+
+.react-dev-btn {
+    width: 250px;
+    background-color: #303a5c !important;
+}
+
+.nearshore-dev-btn {
+    width: 320px;
+    background-color: #303a5c !important;
+}
+
+.fintech-dev-btn {
+    width: 350px;
+    background-color: #303a5c !important;
+}
+
+.verified-agencies {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    font-family: var(--main-font);
+}
+
+.brand-logos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.brand-logos::-webkit-scrollbar {
+    display: none;
+}
+
+.tutorial-video {
+    background-image: url(./images/imgi_10_about-video-placeholder.jpg);
+    height: 301px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.cta-btn {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: #37d17d !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 23px;
+    font-size: 20px !important;
+}
+
+.cta-btn:hover {
+    transform: translateX(10px);
+    background-color: #7a71f8 !important;
+    transition: all 0.2s ease-in;
+}
+
+.pricing {
+    width: 100%;
+    background-color: #03112f;
+    background-image: url(./images/imgi_132_hero-bg-mask.svg);
+}
+
+
+.header-row {
+    color: #a9c3ff;
+    letter-spacing: 1px;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #123b74, #0f2f5c);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.budget-box {
+    background-color: #19b574;
+    color: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.project-type {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.project-id {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.section-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.post-project {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600 !important;
+    background-color: #238a51 !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 23px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+
+.post-project:hover {
+    background-color: #37d17d !important;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.view-market {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600 !important;
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    outline: none !important;
+    border-radius: 23px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+
+.view-market:hover {
+    background-color: #374669 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.service-categories {
+    width: 100%;
+    background-color: #edf7ff;
+    overflow: hidden;
+    font-family: var(--main-font);
+}
+
+.list-unstyled {
+    list-style: none;
+    transition: 0.4s ease;
+
+}
+
+.list-unstyled:hover {
+    transform: translateX(25px);
+    color: #0181dd;
+    cursor: pointer;
+    text-decoration: underline !important;
+    list-style: disc !important;
+
+}
+
+.view-all-categories {
+    width: 300px;
+    height: 70px;
+    background-color: transparent !important;
+    border: 1px solid #0181dd !important;
+    font-size: 20px !important;
+    color: #0181dd !important;
+    margin-bottom: 30px;
+    place-content: center;
+    font-weight: 600 !important;
+
+}
+
+.view-all-categories:hover {
+    color: #5dbdf0 !important;
+    border: 1px solid #5dbdf0 !important;
+}
+
+.reviews {
+    width: 100%;
+    background-color: #03112f;
+    background-image: url(./images/imgi_132_hero-bg-mask.svg);
+}
+
+.reviews-title {
+    font-size: calc(1.325rem + 0.9vw) !important;
+    padding-top: 100px;
+    color: white;
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+
+}
+
+.reviews-title p{
+    font-weight: 600;
+
+}
+
+.reviews-title p{
+    font-weight: 200;
+
+}
+
+.reviews-title i{
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
