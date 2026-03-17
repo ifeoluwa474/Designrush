@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DesignRush Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #f3f5f9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #0b0f1a;
+        }
+
+        /* HERO */
+        .hero {
+            height: 260px;
+            background: linear-gradient(90deg, #0b1d3a, #1e3c72);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-weight: 600;
+        }
+
+        /* LOGIN CARD */
+        .login-container {
+            margin-top: -90px;
+        }
+
+        .login-card {
+            border-radius: 10px;
+            border: none;
+        }
+
+        .form-control {
+            height: 50px;
+        }
+
+        .continue-btn {
+            background: #2a7de1;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .continue-btn:hover {
+            background: #1c66c3;
+        }
+
+        .link-text {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+
+
+
+        .section-space {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .help-btn {
+            background: linear-gradient(90deg, #3aa0e6, #1f78d1);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-weight: 500;
+            clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+        }
+
+        .help-btn:hover {
+            opacity: 0.9;
+        }
+
+        .small-text {
+            color: #7a7a7a;
+            font-size: 20px;
+        }
+
+        .desc {
+            color: #6c757d;
+            max-width: 420px;
+        }
+
+
+
+
+        .subscribe-section {
+            background: linear-gradient(to right, #eaf3f8, #ffffff);
+            padding: 90px 0;
+        }
+
+        .title {
+            max-width: 900px;
+            margin: auto;
+            font-weight: 500;
+        }
+
+        .form-shape {
+            border: 1px solid #e2e2e2;
+            padding: 14px 25px;
+            background: white;
+            clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+        }
+
+        .subscribe-btn {
+            background: linear-gradient(90deg, #2e8ad8, #1f6fc3);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-weight: 600;
+            clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#"><img src="./images/designrush-white-logo-10.svg"></a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="index.html">Trending Brands</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="./agency_directory.html">Agency Directory</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Marketplace</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Awards</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <button class="btn btn-outline-light btn-sm">
+                            List Your Agency
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="btn btn-success btn-sm">
+                            Find an Agency
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Login</h1>
+    </div>
+
+    <!-- LOGIN CARD -->
+    <div class="container login-container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-7">
+
+                <div class="card shadow-lg p-4 login-card">
+
+                    <form>
+
+                        <div class="mb-4">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="text-end">
+                            <button class="continue-btn text-white">
+                                Continue
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <div class="text-center mt-4 link-text">
+                        New to DesignRush?
+                        <a href="#" class="text-decoration-none">
+                            List Your Agency
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container section-space">
+
+        <div class="row align-items-center w-100">
+
+            <!-- LEFT IMAGE SPACE -->
+            <div class="col-md-6 text-center">
+
+                <img src="./images/111.jpeg" class="img-fluid" style="max-width:420px;">
+
+            </div>
+
+
+            <!-- RIGHT TEXT -->
+            <div class="col-md-6">
+
+                <p class="small-text mb-2">
+                    Meanwhile...
+                </p>
+
+                <h2 class="fw-semibold mb-3" style="max-width:480px;">
+                    Need Help Selecting The Right
+                    Agency For Your Project?
+                </h2>
+
+                <p class="desc mb-4">
+                    We can help you find agencies that fit your budget and other
+                    requirements within just a few days and free of charge.
+                </p>
+
+                <button class="help-btn">
+                    We Can Help You For Free
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="subscribe-section">
+
+        <div class="container text-center">
+
+            <h2 class="title mb-5">
+                Receive the Latest <strong>Digital Trends</strong> &
+                <br>
+                <strong>Best Web, App & Logo Design Award Winners</strong>
+            </h2>
+
+            <div class="row justify-content-center g-3">
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control form-shape" placeholder="Your Name">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="email" class="form-control form-shape" placeholder="Your Email">
+                </div>
+
+                <div class="col-md-2">
+                    <button class="subscribe-btn w-100">
+                        SUBSCRIBE
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    
+
+    <!-- Footer Section -->
+    <footer class="footer footer-bg py-5">
+
+      <div class="container">
+
+        <div class="row">
+
+
+
+          <!-- Logo + Description -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-white">
+              <img src="./images/designrush-white-logo-10.svg">
+            </h5>
+            <p class="small text-light">
+              DesignRush is the premier agency directory, awards platform, and media hub connecting brands with top
+              agencies in software, app development, design, and marketing.
+            </p>
+            <p class="small text-light">@ DesignRush 2026, All Rights Reserved</p>
+          </div>
+
+
+
+          <!-- Column 1: For Businesses -->
+          <div class="col-md-2 mb-4">
+            <h5 style="color: #71a0fa;">For Businesses</h5>
+            <ul>
+              <li><a href="#">Agency Categories</a></li>
+              <li><a href="#">Agency Ranking Methodology</a></li>
+              <li><a href="#">Trends Articles</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+
+
+          <!-- Column 2: For Agencies -->
+          <div class="col-md-2 mb-4">
+            <h5 style="color: #71a0fa;">For Agencies</h5>
+            <ul>
+              <li><a href="#">Benefits of Listing With Us</a></li>
+              <li><a href="#">Submit An Agency</a></li>
+              <li><a href="#">Sponsorship</a></li>
+              <li><a href="#">All Agencies</a></li>
+            </ul>
+          </div>
+
+
+
+          <!-- Column 3: About DesignRush -->
+          <div class="col-md-2 mb-2">
+            <h5 style="color: #71a0fa;">About DesignRush</h5>
+            <ul>
+              <li><a href="#">Team & Story</a></li>
+            </ul>
+          </div>
+
+
+
+          <!-- Column 4: Get in Touch -->
+          <div class="col-md-2 mb-2">
+            <h5 style="color: #71a0fa;">Get in Touch</h5>
+            <p class="small text-light">
+              18117 Biscayne Blvd<br>
+              Miami, FL 33160<br>
+              United States
+            </p>
+
+
+            <div class="d-flex gap-3">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi fa-server"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
