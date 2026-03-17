@@ -11,31 +11,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Noto+Serif+Georgian:wght@100..900&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.css">
-    <script src="/bootstrap-5.3.8-dist/js/bootstrap.js" defer></script>
 </head>
+`
 
 <body>
     <div class="page-wrapper">
 
-        <nav class="navbar navbar-light bg-light fixed-top ">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
+
                 <a class="navbar-brand" href="#">
                     <img src="./images/imgi_1_designrush-white-logo.svg" alt="Design Rush logo">
                 </a>
-                <button class="navbar-toggler bg-transparent d-xl-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class=""><img src="./images/icons8-hamburger-menu-30.svg" alt="" height="30px"
-                            width="30px"></span>
+
+                <button class="navbar-toggler bg-transparent border-0 d-xl-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <img src="./images/icons8-hamburger-menu-30.svg" height="30" width="30">
                 </button>
-                <ul class="nav justify-content-end  d-none d-xl-flex custom-nav">
+
+                <ul class="nav justify-content-end d-none d-xl-flex custom-nav align-items-center gap-3">
+
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="#" aria-current="page">TRENDING BRANDS</a>
+                        <a class="nav-link text-light" href="#">TRENDING BRANDS</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link text-light" href="./agency_directory.html">AGENCY DIRECTORY</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">MARKETPLACE</a>
                     </li>
@@ -45,59 +50,63 @@
                     </li>
 
                     <li class="nav-item">
-                        <a name="" id="" class="btn btn-transparent border-primary text-light" href="#"
-                            role="button">LIST YOUR AGENCY</a>
-
+                        <a class="btn-outline-light btn btn-transparent border-primary" href="#">LIST YOUR AGENCY</a>
                     </li>
 
                     <li class="nav-item">
-                        <a name="" id="" class="btn btn-success ms-3 text-light" href="#" role="button">LIST YOUR
-                            AGENCY</a>
+                        <a class="btn btn-success" href="#">GET STARTED</a>
                     </li>
 
-                    <li class="nav-item d-block">
-                        <a class="nav-link text-light" href="#">
-                            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
+
                 </ul>
 
-                <div class="offcanvas offcanvas-end fade bg-primary" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasNavbar">
+
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                            Offcanvas
-                        </h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <img src="./images/imgi_1_designrush-white-logo.svg" alt="Design Rush logo">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
                     </div>
+
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <ul class="navbar-nav flex-column gap-3">
+
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link text-light" href="#">TRENDING BRANDS</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link text-light" href="./agency_directory.html">AGENCY DIRECTORY</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Action 1</a>
-                                    <a class="dropdown-item" href="#">Action 2</a>
-                                </div>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">MARKETPLACE</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">AWARDS</a>
+                            </li>
+
+                            <li class="nav-item mt-3">
+                                <a class="btn btn-outline-light w-100" href="#">
+                                    LIST YOUR AGENCY
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="btn btn-success w-100" href="#">
+                                    GET STARTED
+                                </a>
+                            </li>
+
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">
-                                Search
-                            </button>
-                        </form>
+
                     </div>
                 </div>
+
             </div>
         </nav>
+
         <div class="hero-text pb-5">
             <h1 class="title">Save Time Finding The Right Agency Partner</h1>
             <p class="share-req">Share your requirements & we'll find the right service provider for your project</p>
@@ -115,132 +124,210 @@
                 <div class="d-xl-block d-none" style="width: 30%; height: 1px; background-color: grey;"></div>
             </div>
 
-            <div class="products d-flex flex-wrap fs-5 text-center justify-content-center text-secondary">
-                <div
-                    class="me-0 ms-3 d-block text-center align-self-center me-md-0 me-sm-0 text-white text-decoration-underline">
-                    Software Development</div>
-                <div class="me-5 ms-5 d-none d-xl-block">Web Design</div>
-                <div class="me-5 d-none d-xl-block"> Marketing</div>
-                <div class="me-5 d-none d-xl-block">Search Engine Optimization</div>
-                <div class="me-5 d-none d-xl-block">Social Media</div>
-                <div class="me-5 d-none d-xl-block">Locations</div>
-            </div>
+            <div class="container py-5">
+                <ul class="nav justify-content-center mb-4" id="serviceTabs" role="tablist">
 
-            <div id="carouselId" class="carousel slide d-block d-xl-none" data-bs-ride="carousel">
+                    <li class="nav-item">
+                        <button class="nav-link active text-white" data-bs-toggle="tab" data-bs-target="#software"
+                            type="button">
+                            Software Development
+                        </button>
+                    </li>
 
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill software-dev-btn fw-bold me-2" href="#"
-                                role="button"><i class="fa fa-gears" aria-hidden="true"></i>Software Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold app-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-mobile-phone" aria-hidden="true"></i> App Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold iphone-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-apple" aria-hidden="true"></i>iPhone Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold web-dev-btn" href="#"
-                                role="button">Webflow Developers</a>
-                        </div>
+                    <li class="nav-item">
+                        <button class="nav-link text-white-50" data-bs-toggle="tab" data-bs-target="#webdesign"
+                            type="button">
+                            Web Design
+                        </button>
+                    </li>
 
-                        <div class="mt-3 mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold enterprise-dev-btn me-2"
-                                href="#" role="button"><i class="fa fa-building" aria-hidden="true"></i>Enterprise
-                                Software Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold react-dev-btn me-2" href="#"
-                                role="button">React Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold nearshore-dev-btn" href="#"
-                                role="button"><i class="fa fa-map-o" aria-hidden="true"></i>Nearshore Software
+                    <li class="nav-item">
+                        <button class="nav-link text-white-50" data-bs-toggle="tab" data-bs-target="#marketing"
+                            type="button">
+                            Marketing
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link text-white-50" data-bs-toggle="tab" data-bs-target="#seo" type="button">
+                            Search Engine Optimization
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link text-white-50" data-bs-toggle="tab" data-bs-target="#social"
+                            type="button">
+                            Social Media
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link text-white-50" data-bs-toggle="tab" data-bs-target="#locations"
+                            type="button">
+                            Locations
+                        </button>
+                    </li>
+
+                </ul>
+
+
+                <div class="tab-content text-center">
+
+                    <div class="tab-pane  show active" id="software">
+
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Software Developers</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">App Developers</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">iPhone Developers</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Webflow Developers</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Enterprise Software
                                 Development</a>
-                        </div>
-                        <a name="" id="" class="btn text-white rounded-pill fw-bold fintech-dev-btn" href="#"
-                            role="button"><i class="fa fa-bitcoin" aria-hidden="true"></i>Fintech Software
-                            Development</a>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill software-dev-btn fw-bold me-2" href="#"
-                                role="button"><i class="fa fa-gears" aria-hidden="true"></i>Software Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold app-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-mobile-phone" aria-hidden="true"></i> App Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold iphone-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-apple" aria-hidden="true"></i>iPhone Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold web-dev-btn" href="#"
-                                role="button">Webflow Developers</a>
-                        </div>
 
-                        <div class="mt-3 mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold enterprise-dev-btn me-2"
-                                href="#" role="button"><i class="fa fa-building" aria-hidden="true"></i>Enterprise
-                                Software Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold react-dev-btn me-2" href="#"
-                                role="button">React Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold nearshore-dev-btn" href="#"
-                                role="button"><i class="fa fa-map-o" aria-hidden="true"></i>Nearshore Software
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">React Development</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Nearshore Software
                                 Development</a>
-                        </div>
-                        <a name="" id="" class="btn text-white rounded-pill fw-bold fintech-dev-btn" href="#"
-                            role="button"><i class="fa fa-bitcoin" aria-hidden="true"></i>Fintech Software
-                            Development</a>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill software-dev-btn fw-bold me-2" href="#"
-                                role="button"><i class="fa fa-gears" aria-hidden="true"></i>Software Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold app-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-mobile-phone" aria-hidden="true"></i> App Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold iphone-dev-btn me-2" href="#"
-                                role="button"><i class="fa fa-apple" aria-hidden="true"></i>iPhone Developers</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold web-dev-btn" href="#"
-                                role="button">Webflow Developers</a>
-                        </div>
 
-                        <div class="mt-3 mb-4">
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold enterprise-dev-btn me-2"
-                                href="#" role="button"><i class="fa fa-building" aria-hidden="true"></i>Enterprise
-                                Software Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold react-dev-btn me-2" href="#"
-                                role="button">React Development</a>
-                            <a name="" id="" class="btn text-white rounded-pill fw-bold nearshore-dev-btn" href="#"
-                                role="button"><i class="fa fa-map-o" aria-hidden="true"></i>Nearshore Software
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Fintech Software
                                 Development</a>
-                        </div>
-                        <a name="" id="" class="btn text-white rounded-pill fw-bold fintech-dev-btn" href="#"
-                            role="button"><i class="fa fa-bitcoin" aria-hidden="true"></i>Fintech Software
-                            Development</a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev me-5" type="button" data-bs-target="#carouselId"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
-            <div class="software mt-5 d-none d-xl-block">
-                <div class="mb-4">
-                    <a name="" id="" class="btn text-white rounded-pill software-dev-btn fw-bold me-2" href="#"
-                        role="button"><i class="fa fa-gears" aria-hidden="true"></i>Software Developers</a>
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold app-dev-btn me-2" href="#"
-                        role="button"><i class="fa fa-mobile-phone" aria-hidden="true"></i> App Developers</a>
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold iphone-dev-btn me-2" href="#"
-                        role="button"><i class="fa-brands fa-apple" aria-hidden="true"></i>iPhone Developers</a>
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold web-dev-btn" href="#"
-                        role="button">Webflow Developers</a>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="webdesign">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">B2B Web Design</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Responsive Web Design</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Small Business Website
+                                Design</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">E-Commerce for Small
+                                Business</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Education Web Design</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">User Interface Design</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="marketing">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Digital Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Brand Strategy</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Restaurant Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Small Business Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Digital Advertising</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Dental Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Automotive Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Google Ads</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Amazon Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Mobile App Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Paid Media</a>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="seo">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Small Business SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">SEO COnsultants</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Enterprise SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Local SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">eCommerce SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Real Estate SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Law Firm SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Automotive SEO</a>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="social">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Influencer Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">SMM Consulting</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Facebook Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Instagram Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Small Business Social
+                                Media</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Tiktok Marketing</a>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="locations">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Miami Marketing</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Boston Branding</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Houston App Development</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Birminghan PPC</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Las Vegas SEO</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">New Jersey Software
+                                Development</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Connecticut Web
+                                Development</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Atlanta Web Design</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Phoenix Social Media
+                                Agencies</a>
+
+                            <a class="btn rounded-pill px-4 py-2 text-white bg-secondary">Software Developers in the
+                                U.S.</a>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="mt-3 mb-4">
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold enterprise-dev-btn me-2" href="#"
-                        role="button"><i class="fa fa-building" aria-hidden="true"></i>Enterprise Software
-                        Development</a>
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold react-dev-btn me-2" href="#"
-                        role="button">React Development</a>
-                    <a name="" id="" class="btn text-white rounded-pill fw-bold nearshore-dev-btn" href="#"
-                        role="button"><i class="fa fa-map-o" aria-hidden="true"></i>Nearshore Software Development</a>
-                </div>
-                <a name="" id="" class="btn text-white rounded-pill fw-bold fintech-dev-btn" href="#" role="button"><i
-                        class="fa-classic fa-bitcoin" aria-hidden="true"></i>Fintech Software Development</a>
+
             </div>
         </div>
 
@@ -405,155 +492,173 @@
                     </div>
                 </div>
 
-                <div class="div d-flex align-content-center justify-content-center align-self-center gap-3">
-                    <a name="" id="" class="btn text-white post-project fs-4 fs-lg-2" href="#" role="button">POST YOUR
-                        PROJECT</a>
-                    <p class="fs-5 text-center mt-2 text-white">OR</p>
-                    <a name="" id="" class="btn text-white view-market" href="#" role="button">View More Marketplace
-                        Projects</a>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 text-center">
+                    <a class="btn text-white post-project fs-4 fs-md-2" href="#" role="button">
+                        POST YOUR PROJECT
+                    </a>
+
+                    <p class="fs-5 my-2 my-md-0 text-white">OR</p>
+
+                    <a class="btn text-white view-market" href="#" role="button">
+                        View More Marketplace Projects
+                    </a>
                 </div>
 
             </div>
         </div>
+
         <div class="service-categories">
             <div class="px-2 px-lg-5">
-                <div class="logo d-flex justify-content-center pt-5 align-content-center">
-                    <img src="./images/download (15).svg" alt="" width="50px" height="100px">
+                <div class="logo d-flex justify-content-center pt-5">
+                    <img src="./images/download (15).svg" alt="" width="50" height="100">
                 </div>
+
                 <h1 class="text-center pt-3">View Verified Agencies by Service Categories</h1>
 
-                <div class="row d-flex pb-5">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
-                            <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">Branding & Creative
-                                    <img src="./images/download (8).svg" alt="" class="" width="50px" height="50px">
-                                </h4>
-                                <p class="card-text">
-                                <ul class=" fs-5 fw-light ps-4">
-                                    <li class="list-unstyled">Digital Agencies</li>
-                                    <li class="list-unstyled">Branding Agencies</li>
-                                    <li class="list-unstyled">Creative Agencies</li>
-                                    <li class="list-unstyled">Product Design Companies</li>
-                                    <li class="list-unstyled">Logo Design Companies</li>
-                                    <li class="list-unstyled">Graphic Design Companies</li>
+                <div class="row pb-5 g-4">
 
-                                </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    Branding & Creative
+                                    <img src="./images/download (8).svg" width="50" height="50">
+                                </h4>
 
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
-                            <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">Website & Interface
-                                    <img src="./images/download (7).svg" alt="" class="" width="50px" height="50px">
-                                </h4>
-                                <p class="card-text">
-                                <ul class=" fs-5 fw-light ps-4">
-                                    <li class="list-unstyled">Web Design Companies</li>
-                                    <li class="list-unstyled">eCommerce Development Companies</li>
-                                    <li class="list-unstyled">Web Development Companies</li>
-                                    <li class="list-unstyled">WordPress Web Design Companies</li>
-                                    <li class="list-unstyled">WordPress Development Companies</li>
-                                    <li class="list-unstyled">Magento Development Companies</li>
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">Digital Agencies</li>
+                                    <li class="list-unstyled list-transition">Branding Agencies</li>
+                                    <li class="list-unstyled list-transition">Creative Agencies</li>
+                                    <li class="list-unstyled list-transition">Product Design Companies</li>
+                                    <li class="list-unstyled list-transition">Logo Design Companies</li>
+                                    <li class="list-unstyled list-transition">Graphic Design Companies</li>
                                 </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
                             <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">Marketing
-                                    <img src="./images/download (6).svg" alt="" class="" width="50px" height="50px">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    Website & Interface
+                                    <img src="./images/download (7).svg" width="50" height="50">
                                 </h4>
-                                <p class="card-text">
-                                <ul class=" fs-5 fw-light ps-4">
-                                    <li class="list-unstyled">Digital Marketing Agencies</li>
-                                    <li class="list-unstyled">SEO Agencies</li>
-                                    <li class="list-unstyled">PPC Agencies</li>
-                                    <li class="list-unstyled">Social Media Marketing Agencies</li>
-                                    <li class="list-unstyled">Search Engine Marketing Agencies</li>
-                                    <li class="list-unstyled">Email Marketing Agencies</li>
+
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">Web Design Companies</li>
+                                    <li class="list-unstyled list-transition">eCommerce Development Companies</li>
+                                    <li class="list-unstyled list-transition">Web Development Companies</li>
+                                    <li class="list-unstyled list-transition">WordPress Web Design Companies</li>
+                                    <li class="list-unstyled list-transition">WordPress Development Companies</li>
+                                    <li class="list-unstyled list-transition">Magento Development Companies</li>
                                 </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    Marketing
+                                    <img src="./images/download (6).svg" width="50" height="50">
+                                </h4>
+
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">Digital Marketing Agencies</li>
+                                    <li class="list-unstyled list-transition">SEO Agencies</li>
+                                    <li class="list-unstyled list-transition">PPC Agencies</li>
+                                    <li class="list-unstyled list-transition">Social Media Marketing Agencies</li>
+                                    <li class="list-unstyled list-transition">Search Engine Marketing Agencies</li>
+                                    <li class="list-unstyled list-transition">Email Marketing Agencies</li>
+                                </ul>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    Software & App
+                                    <img src="./images/download (5).svg" width="50" height="50">
+                                </h4>
+
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">Software Development Companies</li>
+                                    <li class="list-unstyled list-transition">Offshore Software Development Companies
+                                    </li>
+                                    <li class="list-unstyled list-transition">Outsourcing Software Development Companies
+                                    </li>
+                                    <li class="list-unstyled list-transition">Mobile App Development Companies</li>
+                                    <li class="list-unstyled list-transition">VR & Augmented Reality Companies</li>
+                                    <li class="list-unstyled list-transition">AI Companies</li>
+                                </ul>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    IT Services
+                                    <img src="./images/download (4).svg" width="50" height="50">
+                                </h4>
+
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">IT Services Companies</li>
+                                    <li class="list-unstyled list-transition">IT Outsourcing Companies</li>
+                                    <li class="list-unstyled list-transition">Managed Service Providers</li>
+                                    <li class="list-unstyled list-transition">Cybersecurity Companies</li>
+                                    <li class="list-unstyled list-transition">Big Data Analytics Companies</li>
+                                    <li class="list-unstyled list-transition">Cloud Consulting Companies</li>
+                                </ul>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fs-2 text-primary d-flex align-items-center gap-2">
+                                    Business Services
+                                    <img src="./images/download (3).svg" width="50" height="50">
+                                </h4>
+
+                                <ul class="fs-5 fw-light ps-3">
+                                    <li class="list-unstyled list-transition">Business Consulting Firms</li>
+                                    <li class="list-unstyled list-transition">Market Research Companies</li>
+                                    <li class="list-unstyled list-transition">Call Center Companies</li>
+                                    <li class="list-unstyled list-transition">BPO Companies</li>
+                                    <li class="list-unstyled list-transition">Accounting Firms</li>
+                                    <li class="list-unstyled list-transition">HR Outsourcing Companies</li>
+                                </ul>
+
+                                <p class="text-primary pt-3">VIEW ALL</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="row d-flex">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
-                            <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">Software & App
-                                    <img src="./images/download (5).svg" alt="" class="" width="50px" height="50px">
-                                </h4>
-                                <p class="card-text">
-                                <ul class="fs-5 fw-light ps-4">
-                                    <li class="list-unstyled">Software Development Companies</li>
-                                    <li class="list-unstyled">Offshore Software Development Companies</li>
-                                    <li class="list-unstyled">Outsourcing Software Development Companies</li>
-                                    <li class="list-unstyled">Mobile App Development Companies</li>
-                                    <li class="list-unstyled">VR & Augmented Reality Companies</li>
-                                    <li class="list-unstyled">AI Companies</li>
-                                </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
-                            <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">IT Services
-                                    <img src="./images/download (4).svg" alt="" class="" width="50px" height="50px">
-                                </h4>
-                                <p class="card-text">
-                                <ul class="fs-5 fw-light ps-5 pb-5">
-                                    <li class="list-unstyled">IT Services Companies</li>
-                                    <li class="list-unstyled">IT Outsourcing Companies</li>
-                                    <li class="list-unstyled">Managed Service Providers</li>
-                                    <li class="list-unstyled">Cybersecurity Companies</li>
-                                    <li class="list-unstyled">Big Data Analytics Companies</li>
-                                    <li class="list-unstyled">Cloud Consulting Companies</li>
-                                </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card shadow pb-5 rounded-4">
-                            <div class="card-body">
-                                <h4 class="card-title ps-4 fs-2 text-primary">Business Services
-                                    <img src="./images/download (3).svg" alt="" class="" width="50px" height="50px">
-                                </h4>
-                                <p class="card-text">
-                                <ul class="fs-5 fw-light ps-5 pb-5">
-                                    <li class="list-unstyled">Business Consulting Firms</li>
-                                    <li class="list-unstyled">Market Research Companies</li>
-                                    <li class="list-unstyled">Call Center Companies</li>
-                                    <li class="list-unstyled">BPO Companies</li>
-                                    <li class="list-unstyled">Accounting Firms</li>
-                                    <li class="list-unstyled">HR Outsourcing Companies</li>
-                                </ul>
-                                <p class="ps-4 text-primary pt-4">VIEW ALL</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-center text-center pb-5">
+                    <a class="btn view-all-categories" href="#" role="button">
+                        View All Service Categories
+                    </a>
                 </div>
-                <div class="d-flex align-self-center justify-content-center text-center ">
-                    <a name="" id="" class="btn view-all-categories " href="#" role="button">View All Service
-                        Categories</a>
 
-                </div>
             </div>
         </div>
 
@@ -603,7 +708,615 @@
                 </div>
             </div>
         </div>
+
+        <div class="awards">
+            <section class="design-awards py-4 bg-white">
+
+                <div class="container">
+                    <div class="text-center mb-5 awards-heading">
+                        <h2 class="fw-bold text-white">DESIGN <span class="mx-3 text-white">AWARDS</span></h2>
+                    </div>
+
+
+                    <ul class="nav nav-tabs justify-content-center mb-5 border-0" role="tablist">
+
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#website">
+                                WEBSITE DESIGN
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#logo">
+                                LOGO DESIGN
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#print">
+                                PRINT DESIGN
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#app">
+                                APP DESIGN
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#packaging">
+                                PACKAGING DESIGN
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#video">
+                                VIDEO DESIGN
+                            </button>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade show active" id="website">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best Website Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        WellJoy
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View Website Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/imgi_18_1-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="logo">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best Logo Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        Yuma
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View Logo Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/9-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="tab-pane fade" id="print">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best Print Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        Lugre Haus
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View Print Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/1-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="tab-pane fade" id="app">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best App Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        Aveda
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View App Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/13-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="packaging">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best Packaging Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        Résidée
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View Packaging Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/12-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="video">
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-5">
+
+                                    <p class="text-secondary mb-2">March's Winner</p>
+
+                                    <h2 class="fw-bold mb-3">
+                                        Featured Best Video Design
+                                    </h2>
+
+                                    <p class="text-secondary mb-4">
+                                        Minecraft- Shape Your World
+                                    </p>
+
+                                    <a class="btn btn-outline-primary px-4 py-2 mb-4">
+                                        View Video Design Awards →
+                                    </a>
+
+                                    <br>
+
+                                    <a class="text-primary text-decoration-none">
+                                        See All Awarded Designs →
+                                    </a>
+
+                                </div>
+
+
+                                <div class="col-lg-7">
+
+                                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                                        <img src="images/21-preview.jpg" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="newsletter">
+            <section class="trending-brands py-5 text-white">
+
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+
+                        <div>
+                            <h3 class="fw-bold mb-1">Trending Brands</h3>
+                            <small class="text-light">
+                                Latest Updates on Top Global Brands and Agencies
+                            </small>
+                        </div>
+
+                        <a class="btn btn-outline-light btn-sm view-news">
+                            VIEW LATEST NEWS →
+                        </a>
+
+                    </div>
+
+                    <hr class="border-light opacity-25 mb-5">
+
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-6">
+
+                            <div class="card bg-dark border-0 text-white">
+
+                                <img src="images/mcdonalds-crocs-happy-meal-details.jpg" class="card-img"
+                                    object-fit="cover">
+
+                                <div class="card-img-overlay d-flex align-items-end">
+
+                                    <h5 class="fw-semibold">
+                                        Crocs Unveils 'Punch the Monkey' Jibbitz Inspired by Viral Baby Macaque
+                                    </h5>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+                            <div class="row g-3">
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/r2-preview.jpg" width="80" class="rounded me-3">
+                                    <p class="small">
+                                        Rivian Builds 245-Foot Off-Road Course at SXSW to Showcase Its R2 ...
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/seo-roundup-16-preview.jpg" width="80" class="rounded me-3">
+                                    <p class="small">
+                                        DesignRush SEO Roundup: Reddit Trust Gap, Branded Filter,...
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/punch-monkey-crocs-preview.jpg" width="80" class="rounded me-3">
+                                    <p class="small">
+                                        Crocs Unveils ‘Punch the Monkey’ Jibbitz Inspired by Viral Baby Macaque...
+
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/Mats-Bryntse-preview.jpg" width="80" class="rounded me-3">
+                                    <p class="small">
+                                        How Bryntum Builds UI Infrastructure for Enterprise Software
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/coca-cola-jump-campaign-preview.jpg" width="80"
+                                        class="rounded me-3">
+                                    <p class="small">
+                                        Coca-Cola, J Balvin Reimagine Van Halen's 'Jump' for FIFA World...
+                                    </p>
+                                </div>
+
+                                <div class="col-sm-6 d-flex">
+                                    <img src="images/anthropic-claude-opus-4-preview.jpg" width="80"
+                                        class="rounded me-3">
+                                    <p class="small">
+                                        The OpenAI-Anthropic Pentagon Divide and Its Impact on Agency AI...
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-5 pt-4">
+
+                        <h1 class="fw-semibold mb-4">
+                            Receive the Latest Digital Trends & Best <br>
+                            Web, App & Logo Design Award Winners
+                        </h1>
+
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+                            <input class="form-control w-auto px-4" placeholder="Your Name">
+
+                            <input class="form-control w-auto px-4" placeholder="Your Email">
+
+                            <button class="btn btn-primary px-4">
+                                SUBSCRIBE →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <div class="agencies">
+            <section class="agency-section py-5 bg-light">
+
+                <div class="container text-center">
+
+                    <h2 class="fw-semibold mb-4">
+                        Do You Represent a <span class="text-primary">Professional Agency?</span>
+                    </h2>
+
+                    <a href="#" class="btn btn-primary px-4 py-2 mb-5">
+                        SUBMIT YOUR AGENCY →
+                    </a>
+
+
+                    <div class="row align-items-center justify-content-center g-5 logo-section">
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/Bighorn-Web-Solutions-logo.webp" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/smartsites.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/unico-connect-logo.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/designli-logo.webp" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/bureau-of-small-prrojects.webp" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/Digital-Silk.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/goji-labs-logo.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/bilberrry.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/Kanda-Software.png" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/intero-digital.webp" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/infinum.webp" class="img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <img src="images/design-in-dc.png" class="img-fluid">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <footer class="footer-section text-white pt-5 pb-3">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3">
+
+                        <img src="/images/imgi_1_designrush-white-logo.svg" alt="design rush logo">
+
+                        <p class="small">
+                            DesignRush is the premier agency directory, awards platform,
+                            and media hub connecting brands with top agencies in software,
+                            app development, design, and marketing.
+                        </p>
+
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+
+                        <h6 class="fw-bold mb-3">For Businesses</h6>
+
+                        <ul class="list-unstyled small">
+                            <li>Agency Categories</li>
+                            <li>Agency Ranking Methodology</li>
+                            <li>Trends Articles</li>
+                            <li>FAQs</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+
+                        <h6 class="fw-bold mb-3">For Agencies</h6>
+
+                        <ul class="list-unstyled small">
+                            <li>Benefits Of Listing With Us</li>
+                            <li>Submit An Agency</li>
+                            <li>Sponsorship</li>
+                            <li>All Agencies</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+
+                        <h6 class="fw-bold mb-3">About DesignRush</h6>
+
+                        <ul class="list-unstyled small">
+                            <li>Team & Story</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+
+                        <h6 class="fw-bold mb-3">Get in Touch</h6>
+
+                        <p class="small">
+                            18117 Biscayne Blvd <br>
+                            Miami, FL 33160 <br>
+                            United States
+                        </p>
+
+                        <p class="small">Contact Us</p>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap small">
+
+                    <p>© DesignRush 2026, All Rights Reserved</p>
+
+                    <div class="d-flex gap-3">
+                        <span>LinkedIn</span>
+                        <span>Instagram</span>
+                        <span>Facebook</span>
+                        <span>X</span>
+                        <span>YouTube</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
