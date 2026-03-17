@@ -16,7 +16,7 @@ nav {
     font-size: 14px;
     font-weight: 500;
     color: black;
-    height: 50px;
+    height: 70px;
     background: linear-gradient(to bottom, #03112f 0%, #051d4e 100%);
 }
 
@@ -256,13 +256,13 @@ nav {
     font-family: var(--main-font);
 }
 
-.list-unstyled {
+.list-transition {
     list-style: none;
     transition: 0.4s ease;
 
 }
 
-.list-unstyled:hover {
+.list-transition:hover {
     transform: translateX(25px);
     color: #0181dd;
     cursor: pointer;
@@ -305,66 +305,257 @@ nav {
 
 }
 
-.reviews-title p{
+.reviews-title p {
     font-weight: 600;
 
 }
 
-.reviews-title p{
+.reviews-title p {
     font-weight: 200;
 
 }
 
-.reviews-title i{
+.reviews-title i {
     font-style: normal;
     font-size: 20px;
     padding-top: 10px;
 }
 
 
-/* ////////////////////////////// AGENCY DIRECTORY PAGE CSS STYLE    START   //////////////////////////////// */
-  .my-styled-icon {
+.awards-heading {
+    background-image: url(./images/best-design-award-head-bg.webp);
+    width: 100%;
+    height: 55px;
+    align-content: center;
+}
+
+.design-awards {
+    background: #f5f7fb;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:active,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd !important;
+    border-bottom: 3px solid #0d6efd !important;
+}
+
+.trending-brands {
+    background: linear-gradient(135deg, #0d2b6b, #061d46);
+}
+
+.view-news {
+    border: 1px solid #0d6efd !important;
+}
+
+.view-news:hover {
+    background-color: #0d6efd !important;
+    outline: none !important;
+    border: none !important;
+    color: white !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-section div:nth-of-type(1) {
+    animation: move1 3.5s ease-in-out infinite alternate;
+
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-39px);
+    }
+}
+
+.logo-section div:nth-of-type(2) {
+    animation: move2 4s ease-in-out infinite alternate;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.logo-section div:nth-of-type(3) {
+    animation: move3 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(35px);
+    }
+}
+
+.logo-section div:nth-of-type(4) {
+    animation: move4 4s ease-in-out infinite alternate;
+}
+
+@keyframes move4 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(45px);
+    }
+}
+
+.logo-section div:nth-of-type(5) {
+    animation: move5 4s ease-in-out infinite alternate;
+}
+
+@keyframes move5 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+.logo-section div:nth-of-type(6) {
+    animation: move6 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes move6 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+.logo-section div:nth-of-type(7) {
+    animation: move7 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes move7 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(25px);
+    }
+}
+
+.logo-section div:nth-of-type(8) {
+    animation: move8 4s ease-in-out infinite alternate;
+}
+
+@keyframes move8 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.logo-section div:nth-of-type(9) {
+    animation: move9 4s ease-in-out infinite alternate;
+}
+
+@keyframes move9 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(35px);
+    }
+}
+
+.logo-section div:nth-of-type(10) {
+    animation: move10 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes move10 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(45px);
+    }
+}
+
+.logo-section div:nth-of-type(11) {
+    animation: move11 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes move11 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+.logo-section div:nth-of-type(12) {
+    animation: move12 5s ease-in-out infinite alternate;
+}
+
+@keyframes move12 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-35px);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-section div:nth-of-type(n) {
+    animation: none;
+
+}
+}
+
+.my-styled-icon {
     margin-right: 10px;
   }
 
-  .parallelogram-shape {
-    color: #fff59e;
-    flex-direction: column;
-    font-size: 24px;
-    height: 66px;
-    left: 0;
-    padding-top: 6px;
-    position: absolute;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
-    top: 0;
-    width: 100px;
-  }
-
-  .parallelogram-shape::before {
-    background: linear-gradient(180deg, #edc126 0, #b68b30);
-    border-radius: 0 0 6px 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: skewX(325deg);
-    transform-origin: top right;
-    width: 100%;
-  }
-
-  .parall-shape::before {
-    background: linear-gradient(180deg, #edc126 0, #b68b30);
-    border-radius: 0 0 6px 0;
-    content: "";
-    height: 160%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: skewX(325deg);
-    transform-origin: top right;
-    width: 180%;
-  }
 
   .text_header {
     display: flex;
